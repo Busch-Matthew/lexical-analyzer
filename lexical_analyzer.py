@@ -14,7 +14,7 @@ state_table = [     [ 2, 4, 2, 6, 1, 7,10, 6, 1], #1 -- entry point
                     [ 1, 1, 1, 1, 1, 1, 1, 1, 1], #3 -- terminating an identifier -- WAITS TO MOVE
                     [ 5, 4, 5, 5, 5, 5, 5, 8, 1], #4 -- looking for a number or a float
                     [ 1, 1, 1, 1, 1, 1, 1, 1, 1], #5 -- terminating a number -- WAITS TO MOVE
-                    [ 1, 1, 1, 1, 1, 1, 1, 1, 1], #6 -- terminating a seperator -- DOES NOT WAIT
+                    [ 1, 1, 1, 1, 1, 1, 1, 1, 1], #6 -- terminating a separator -- DOES NOT WAIT
                     [ 1, 1, 1, 1, 1, 1, 1, 1, 1], #7 -- terminating an operator -- DOES NOT WAIT
                     [ 9, 8, 9, 9, 9, 9, 9, 9, 9], #8 -- looking for a floatint point number
                     [ 1, 1, 1, 1, 1, 1, 1, 1, 1], #9 -- terminating a floating point number -- WAITS TO MOVE
