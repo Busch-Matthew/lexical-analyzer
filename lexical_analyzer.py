@@ -19,7 +19,7 @@ state_table = [     [ 2, 4, 2, 6, 1, 7,10, 6, 1], #1 -- entry point
                     [ 9, 8, 9, 9, 9, 9, 9, 9, 9], #8 -- looking for a floatint point number
                     [ 1, 1, 1, 1, 1, 1, 1, 1, 1], #9 -- terminating a floating point number -- DOES NOT WAIT
                     [10,10,10,10,10,10,11,10,11], #10 - looking for a comment
-                    [ 1 ,1, 1, 1, 1, 1, 1, 1, 1]  #11 - terminating a comment -- DOES NOT WAIT
+                    [ 1 ,1, 1, 1, 1, 1, 1, 1, 1]  #11 - terminating a comment -- WAITS TO MOVE
                                                     ]
 exit_states = [ -1, 3, 5, 6, 7, 9, 11]
 
