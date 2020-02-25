@@ -11,15 +11,15 @@ def main():
 #-------------------| L| D| _| S|  | O| !| .| n|--------------------------------------
 state_table = [     [ 2, 4, 2, 6, 1, 7,10, 6, 1], #1 -- entry point
                     [ 2, 2, 2, 3, 3, 3, 3, 3, 3], #2 -- looking for an identifier
-                    [ 1, 1, 1, 1, 1, 1, 1, 1, 1], #3 -- terminating an identifier -- DOES NOT WAIT
+                    [ 1, 1, 1, 1, 1, 1, 1, 1, 1], #3 -- terminating an identifier -- WAITS TO MOVE
                     [ 5, 4, 5, 5, 5, 5, 5, 8, 1], #4 -- looking for a number or a float
-                    [ 1, 1, 1, 1, 1, 1, 1, 1, 1], #5 -- terminating a number -- DOES NOT WAIT
-                    [ 1, 1, 1, 1, 1, 1, 1, 1, 1], #6 -- terminating a seperator -- WAITS TO MOVE
-                    [ 1, 1, 1, 1, 1, 1, 1, 1, 1], #7 -- terminating an operator -- WAITS TO MOVE
+                    [ 1, 1, 1, 1, 1, 1, 1, 1, 1], #5 -- terminating a number -- WAITS TO MOVE
+                    [ 1, 1, 1, 1, 1, 1, 1, 1, 1], #6 -- terminating a seperator -- DOES NOT WAIT
+                    [ 1, 1, 1, 1, 1, 1, 1, 1, 1], #7 -- terminating an operator -- DOES NOT WAIT
                     [ 9, 8, 9, 9, 9, 9, 9, 9, 9], #8 -- looking for a floatint point number
-                    [ 1, 1, 1, 1, 1, 1, 1, 1, 1], #9 -- terminating a floating point number -- DOES NOT WAIT
+                    [ 1, 1, 1, 1, 1, 1, 1, 1, 1], #9 -- terminating a floating point number -- WAITS TO MOVE
                     [10,10,10,10,10,10,11,10,11], #10 - looking for a comment
-                    [ 1 ,1, 1, 1, 1, 1, 1, 1, 1]  #11 - terminating a comment -- WAITS TO MOVE
+                    [ 1 ,1, 1, 1, 1, 1, 1, 1, 1]  #11 - terminating a comment -- DOES NOT WAIT
                                                     ]
 exit_states = [ -1, 3, 5, 6, 7, 9, 11]
 
